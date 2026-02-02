@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hey Enosh 💗</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffd6e8, #fff1f7);
+      font-family: "Poppins", Arial, sans-serif;
+      color: #333;
+    }
+    .card {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 320px;
+    }
+    h1 {
+      margin-top: 0;
+      color: #ff4d88;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    #yes {
+      background-color: #ff4d88;
+      color: white;
+    }
+    #no {
+      background-color: #ddd;
+      color: #555;
+    }
+    .message {
+      margin-top: 18px;
+      font-weight: 500;
+      color: #ff4d88;
+      min-height: 24px;
+    }
+    .signature {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hey Enosh 💗</h1>
+    <p>
+      So… you already asked me.<br>
+      But I wanted to ask you properly too.
+    </p>
+    <p><strong>Will you be my Valentine? 🌹</strong></p>
+
+    <div class="buttons">
+      <button id="yes">Yes 💘</button>
+      <button id="no">No 🙄</button>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <div class="signature">
+      made with nervous excitement by Riza ✨
+    </div>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById("yes");
+    const noBtn = document.getElementById("no");
+    const message = document.getElementById("message");
+
+    yesBtn.addEventListener("click", () => {
+      message.textContent = "Yay! I knew it 😼💗 See you on 14th 💐";
+    });
+
+    noBtn.addEventListener("click", () => {
+      message.textContent = "Hmm… wrong answer. Try again 😏";
+    });
+  </script>
+
+</body>
+  </html>
